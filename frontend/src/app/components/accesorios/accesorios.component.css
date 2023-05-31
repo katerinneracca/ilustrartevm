@@ -1,0 +1,45 @@
+.row {
+    background-color: #474931;
+}
+
+div.card {
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 288px;
+    height: 500px;
+}
+
+h2 {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #fefefd;
+    margin-top: 2%;
+    text-align: center;
+}
+
+h5,
+p {
+    font-family: sans-serif;
+}
+
+@media(max-width:850px) {
+    #accesorios {
+        margin: auto;
+        width: 300px;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+}
+
+
+@media(max-width:414px) {
+    #accesorios {
+        margin: auto;
+        width: 190px;
+        height: 450px;
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+}

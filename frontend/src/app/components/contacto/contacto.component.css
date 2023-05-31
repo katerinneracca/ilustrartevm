@@ -1,0 +1,188 @@
+h1{
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    color: #fefefd;
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    color: #fefefd;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+div.contenedor1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 2%;
+}
+
+div{
+    background-color: black;
+}
+
+img{
+    max-height: 500px;
+    float: right;
+    margin-right: 23%;
+}
+
+
+.on {
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.off{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+/*boton on off*/
+.onoffswitch3 {
+    margin-top: 3%;
+    position: relative;
+    width: 100px;
+    margin-left: 90%;
+}
+.onoffswitch3-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch3-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 28px;
+}
+.onoffswitch3-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch3-inner:before, .onoffswitch3-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 37px; 
+    padding: 0; 
+    line-height: 37px;
+    font-size: 16px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch3-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #000000; 
+    color: #FFFFFF;
+}
+.onoffswitch3-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #333232;
+    text-align: right;
+}
+.onoffswitch3-switch {
+    display: block; 
+    width: 20px; 
+    height: 20px;
+    margin: 8.5px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 49px;
+    border: 2px solid #999999; 
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-inner {
+    margin-left: 0;
+}
+.onoffswitch3-checkbox:checked + .onoffswitch3-label .onoffswitch3-switch {
+    right: 0px; 
+}
+
+@media(max-width:820px){
+    #lampara{
+        width: 45%;
+        margin-right: 15%;
+        margin-top: -5%;
+    }
+
+    #checkbox{
+        margin-top: 3%;
+        margin-left: 80%;
+    }
+    
+    #titulo{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:414px){
+    #lampara{
+        width: 80%;
+        margin-right: 10%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    #checkbox{
+        margin-top: 15%;
+        margin-left: 70%;
+    }
+
+    #informacion{
+        margin-left: -1%;
+        font-size: 5px;
+    }
+
+    #info{
+        margin-left:7%;
+    }
+
+}
+
+@media(max-width:375px){
+    #lampara{
+        width: 80%;
+        margin-left: 27%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    #checkbox{
+        margin-top: 15%;
+        margin-left: 70%;
+    }
+
+    #informacion{
+        padding: 5%;
+    }
+
+    #info{
+       font-size: 12px;
+    }
+
+}
+
+@media(max-width:320px){
+    #info{
+        font-size: 11px;
+        display: flex;
+    }
+
+}

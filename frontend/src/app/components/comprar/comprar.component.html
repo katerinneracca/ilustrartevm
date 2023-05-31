@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="onoffswitch2" id="checkbox">
+            <input (click)="cambiarLampara()" input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox"
+                id="myonoffswitch2" tabindex="0" checked>
+            <label class="onoffswitch2-label" for="myonoffswitch2">
+                <span class="onoffswitch2-inner"></span>
+                <span class="onoffswitch2-switch"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="contenedor">
+            <img src="../../../assets/comprar.png" alt="" [ngClass]="{'off' :encendido, 'on' : !encendido}" id="lampara">
+        </div>
+    </div>
+
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button type="button" id="compra" class="btn btn-outline-light">QUIERO COMPRAR</button>
+    </div>
+
+</div>

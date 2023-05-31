@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="onoffswitch3" id="checkbox">
+            <input (click)="cambiarLampara()" input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox"
+                id="myonoffswitch3" tabindex="0" checked>
+            <label class="onoffswitch3-label" for="myonoffswitch3">
+                <span class="onoffswitch3-inner"></span>
+                <span class="onoffswitch3-switch"></span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+        <div class="contenedor">
+            <img src="../../../assets/contacto.png" id="lampara" alt="" [ngClass]="{'off' :encendido, 'on' : !encendido}">
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="contacto" id="contacto">
+            <h1 id="titulo">CONTACTANOS</h1>
+            <div class="contenedor1" id="informacion">
+                <p id="info">Instagram @Ilustrartevm</p>
+                <p id="info">Whatsapp: 3534849841</p>
+                <p id="info">Whatsapp: 3534789039</p>
+            </div>
+
+        </div>
+    </div>
+</div>

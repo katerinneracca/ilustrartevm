@@ -1,0 +1,172 @@
+div{
+    background-color: black;
+}
+
+img{
+    margin-bottom: 2%;
+    float: right;
+    margin-right: 30%;
+    max-height: 500px;
+}
+
+.on {
+    opacity: 0%;
+    transition: 0.5s;
+    
+}
+
+.off{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+button{
+    margin-left: 43%;
+    margin-bottom: 2%;
+    font-size:large;
+}
+
+/*boton on off*/
+.onoffswitch2 {
+    margin-top: 3%;
+    position: relative;
+     width: 100px;
+     margin-left: 90%;
+}
+.onoffswitch2-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch2-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 28px;
+}
+.onoffswitch2-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch2-inner:before, .onoffswitch2-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 37px; 
+    padding: 0; 
+    line-height: 37px;
+    font-size: 16px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch2-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #000000; 
+    color: #FFFFFF;
+}
+.onoffswitch2-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #333232;
+    text-align: right;
+}
+.onoffswitch2-switch {
+    display: block; 
+    width: 20px; 
+    height: 20px;
+    margin: 8.5px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 49px;
+    border: 2px solid #999999; 
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-inner {
+    margin-left: 0;
+}
+.onoffswitch2-checkbox:checked + .onoffswitch2-label .onoffswitch2-switch {
+    right: 0px; 
+}
+@media(max-width:820px){
+    #lampara{
+        margin-right: 27%;
+        width: 45%;
+    }
+
+    #checkbox{
+        margin-top: 3%;
+        margin-left: 80%;
+    }
+
+    #compra{
+        margin-left: 39%;
+    }
+}
+
+
+@media(max-width:414px){
+    #lampara{
+        width: 80%;
+        margin-right: 7%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    #checkbox{
+        margin-top: 15%;
+        margin-left: 70%;
+    }
+
+    #compra{
+        font-size: medium;
+        margin-bottom: 20%;
+        margin-left: 30%;
+    }
+}
+
+@media(max-width:390px){
+    #lampara{
+        width: 80%;
+        margin-left: 25%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+
+    #compra{
+        font-size: medium;
+        margin-bottom: 20%;
+        margin-left: 28%;
+    }
+
+}
+
+@media(max-width:320px){
+    #lampara{
+        width: 80%;
+        margin-left: 20%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    #checkbox{
+        margin-top: 15%;
+        margin-left: 65%;
+    }
+
+    #compra{
+        font-size: medium;
+        margin-bottom: 20%;
+        margin-left: 25%;
+    }
+
+}

@@ -1,0 +1,25 @@
+<div class="row">
+    <!--boton on off-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="onoffswitch1" id="checkbox">
+            <input (click)="cambiarLampara()" type="checkbox" name="onoffswitch1" class="onoffswitch1-checkbox" id="myonoffswitch1" tabindex="0" checked>
+            <label class="onoffswitch1-label" for="myonoffswitch1">
+                <span class="onoffswitch1-inner"></span>
+                <span class="onoffswitch1-switch"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="lampara opacidad">
+            <img src="../../../assets/banner.png" alt="lampara" class="img-fluid " id="lampara" [ngClass]="{'off' :encendido, 'on' : !encendido}">
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="texto" >
+            <h2 id="titulo">ilustrartevm</h2>
+            <h3 id="descripcion">Lamparas personalizadas</h3>
+        </div>
+    </div>
+</div>
